@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PHP Variable Type</title>
+</head>
+<body>
+	<?php
+		$var =10; 		//전역변수로 선언함
+		function varFunc()
+		{
+			#정적변수
+			static $cnt = 0;
+			#지역변수
+			$locVar = 0;
+
+			echo "변수 cnt의 값은 = {$cnt} <br>"
+			echo "변수 locVar의 값은 = {$locVar} <br>"
+		}
+		varFunc();varFunc();varFunc();varFunc();varFunc();
+?>
+
+</body>
+</html>
